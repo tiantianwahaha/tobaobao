@@ -1,4 +1,4 @@
-﻿window.onload=function(){
+window.onload=function(){
 	var mymap = L.map('mapid').setView([39.90733, -243.60874], 11);
 
 	L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
@@ -23,7 +23,17 @@
 		.bindPopup("<b>2022.8.27 奥森</b><br /><img src='image/aosen.jpg' height=\"100%\" width=\"100%\"/>");
     L.marker([40.25596, -243.71349], {icon: L.AwesomeMarkers.icon({icon: 'heart', prefix: 'fa', markerColor: 'orange', iconColor: '#ffffff'}) }).addTo(mymap)
 		.bindPopup("<b>2022.9.10 蟒山森林公园</b><br /><img src='image/mangshan.jpg' height=\"100%\" width=\"100%\"/>");
+    L.marker([40.1077, -243.91261], {icon: L.AwesomeMarkers.icon({icon: 'heart', prefix: 'fa', markerColor: 'orange', iconColor: '#ffffff'}) }).addTo(mymap)
+		.bindPopup("<b>2022.10.4 凤凰岭</b>");
+	L.marker([39.90628, -243.60875], {icon: L.AwesomeMarkers.icon({icon: 'heart', prefix: 'fa', markerColor: 'orange', iconColor: '#ffffff'}) }).addTo(mymap)
+		.bindPopup("<b>2022.10.7 长安街骑行</b>");
 
+    L.marker([39.96914, -243.62987], {icon: L.AwesomeMarkers.icon({icon: 'heart', prefix: 'fa', markerColor: 'blue', iconColor: '#ffffff'}) }).addTo(mymap)
+		.bindPopup("<b>2022.8.27 江西驻京办</b><br /><b>2022.10.29 吉林省驻京办</b>");
+    L.marker([39.9335, -243.65786], {icon: L.AwesomeMarkers.icon({icon: 'heart', prefix: 'fa', markerColor: 'blue', iconColor: '#ffffff'}) }).addTo(mymap)
+		.bindPopup("<b>2022.9.4 乌鲁木齐驻京办</b>");
+    L.marker([39.88797, -243.70551], {icon: L.AwesomeMarkers.icon({icon: 'heart', prefix: 'fa', markerColor: 'blue', iconColor: '#ffffff'}) }).addTo(mymap)
+		.bindPopup("<b>2022.9.16 湖南益阳驻京办</b>");
     /*
     L.marker([30.65682, -255.94849], {icon: L.AwesomeMarkers.icon({icon: 'star', prefix: 'fa', markerColor: 'pink', iconColor: '#ffffff'}) }).addTo(mymap)
 		.bindPopup("<b>计划-成都</b>").openPopup();
